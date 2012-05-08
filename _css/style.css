@@ -249,8 +249,38 @@ td {
   color: black;
   padding: 0.2em 0;
 }
+.background-gradient {
+  background-color: #fcfcfc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#dddddd));
+  background-image: -webkit-linear-gradient(top, #fcfcfc, #dddddd);
+  background-image: -moz-linear-gradient(top, #fcfcfc, #dddddd);
+  background-image: -ms-linear-gradient(top, #fcfcfc, #dddddd);
+  background-image: -o-linear-gradient(top, #fcfcfc, #dddddd);
+  background-image: linear-gradient(to bottom, #fcfcfc, #dddddd);
+}
 body {
-  background-color: #000;
+  background-color: #fcfcfc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#dddddd));
+  background-image: -webkit-linear-gradient(top, #fcfcfc, #dddddd);
+  background-image: -moz-linear-gradient(top, #fcfcfc, #dddddd);
+  background-image: -ms-linear-gradient(top, #fcfcfc, #dddddd);
+  background-image: -o-linear-gradient(top, #fcfcfc, #dddddd);
+  background-image: linear-gradient(to bottom, #fcfcfc, #dddddd);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+body header {
+  height: 40px;
+  width: 90%;
+  margin: 10px auto;
+}
+body header h1 {
+  font-size: 2px;
+  text-indent: -9999px;
+}
+body header #logo {
+  margin: 0px auto;
+  display: block;
 }
 @media only screen and (min-width: 35em) {
   

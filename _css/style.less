@@ -64,16 +64,39 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
+@fromcolor: #fcfcfc;
+@tocolor: #dddddd;
 
+.background-gradient{
+	background-color: @fromcolor;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(@fromcolor), to(@tocolor));
+	background-image: -webkit-linear-gradient(top, @fromcolor, @tocolor);
+	background-image:    -moz-linear-gradient(top, @fromcolor, @tocolor);
+	background-image:     -ms-linear-gradient(top, @fromcolor, @tocolor);
+	background-image:      -o-linear-gradient(top, @fromcolor, @tocolor);
+	background-image:         linear-gradient(to bottom, @fromcolor, @tocolor);
+}
 
 body{
 
-	background-color: #000;
+	.background-gradient;
+	background-repeat: no-repeat;
+	height: 100%;
+
 
 	header{
+		height: 40px;
+		width: 90%;
+		margin: 10px auto;
 
-		logo{
+		h1{
+			font-size:2px;
+			text-indent: -9999px;
+		}
 
+		#logo{
+			margin: 0px auto;
+			display: block;
 		}
 
 	}
