@@ -97,9 +97,12 @@ header #logo {
   pointer-events: none; }
 
 nav {
-  margin: 20px 0 0 70px; }
-  nav .btn {
-    width: 250px; }
+  margin: 20px 0 0 70px;
+  		/*
+  .btn{
+  			width: 250px;
+  		}
+  */ }
   nav p.title {
     width: 250px;
     height: 72px;
