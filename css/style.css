@@ -79,50 +79,80 @@ html {
   min-height: 100%; }
 
 body {
-  background-color: #ccc;
   min-height: 100%;
-  background-color: #fcfcfc;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcfcfc), to(#dddddd));
-  background-image: -webkit-linear-gradient(top, #fcfcfc, #dddddd);
-  background-image: -moz-linear-gradient(top, #fcfcfc, #dddddd);
-  background-image: -ms-linear-gradient(top, #fcfcfc, #dddddd);
-  background-image: -o-linear-gradient(top, #fcfcfc, #dddddd); }
+  background: url(../img/pattern.png), -webkit-linear-gradient(top, #fcfcfc, #dddddd);
+  background: url(../img/pattern.png), -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcfcfc), to(#dddddd));
+  background: url(../img/pattern.png), -moz-linear-gradient(top, #fcfcfc, #dddddd);
+  background: url(../img/pattern.png), -ms-linear-gradient(top, #fcfcfc, #dddddd);
+  background: url(../img/pattern.png), -o-linear-gradient(top, #fcfcfc, #dddddd); }
 
 header #logo {
   margin: 100px 0 0 70px; }
 
 #imac {
   position: absolute;
-  right: 10%; }
+  right: 7%;
+  top: 100px;
+  width: 500px;
+  pointer-events: none; }
 
 nav {
   margin: 20px 0 0 70px; }
-  nav div {
+  nav .btn {
+    width: 250px; }
+  nav p.title {
     width: 250px;
     height: 72px;
-    background: url(../img/button_normal.png) no-repeat; }
-    nav div:hover {
-      background: url(../img/button_hover.png) no-repeat;
-      -webkit-transition: .5s;
-      -moz-transition: .5s;
-      -o-transition: .5s;
-      -ms-transition: .5s;
-      transition: .5s; }
-    nav div:active {
-      background: url(../img/button_active.png) no-repeat;
-      -webkit-transition: .5s;
-      -moz-transition: .5s;
-      -o-transition: .5s;
-      -ms-transition: .5s;
-      transition: .5s; }
-    nav div p {
-      text-transform: capitalize;
-      color: #888;
-      text-shadow: 2px 1px 1px #fff;
-      font-size: 30px;
-      text-align: center;
-      padding-top: 15px; }
+    background: url(../img/button_hover.png) no-repeat;
+    text-transform: capitalize;
+    color: #989898;
+    text-shadow: 2px 1px 1px #fff;
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    padding-top: 15px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    nav p.title:hover {
+      background: url(../img/button_active.png) no-repeat; }
+  nav .pContent {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 1px 20px;
+    font-family: georgia;
+    color: #989898;
+    position: absolute;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px; }
+    nav .pContent p {
+      line-height: 1.8em;
+      font-size: 20px;
+      font-style: italic;
+      font-weight: 200;
+      text-shadow: 1px 1px 1px #fff; }
+  nav #salesContent {
+    margin: -150px 0 0 300px; }
+  nav #supportContent {
+    margin: -190px 0 0 300px; }
+  nav #contactContent {
+    margin: -220px 0 0 300px;
+    padding: 20px 20px; }
+    nav #contactContent p {
+      margin: 0; }
 
+footer a {
+  color: #989898;
+  text-decoration: none; }
 footer p {
-  text-transform: uppercase;
-  bottom: 20px; }
+  bottom: 20px;
+  color: #989898;
+  border-top: 1px solid #989898;
+  width: 250px;
+  font-size: 15px;
+  margin: 150px 0 0 70px;
+  padding-top: 10px;
+  text-shadow: 1px 1px 1px #fff; }
