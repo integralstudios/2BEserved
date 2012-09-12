@@ -146,29 +146,46 @@ header{
 nav{
 	
 	margin: 20px 0 0 70px;
-		/*
-.btn{
-			width: 250px;
-		}
-*/
 		
-		p.title{
-			width: 250px;
-			height: 72px;
-			background: url(../img/button_hover.png) no-repeat;
-			text-transform: capitalize;
-			color: $tekst;
-			text-shadow: 2px 1px 1px #fff;
-			font-size: 30px;
-			font-weight: 200;
-			text-align: center;
-			padding-top: 15px;
-			@include select;
-			
-			&:hover{
-				background: url(../img/button_active.png) no-repeat;
-			}
+	p.title{
+		width: 250px;
+		height: 72px;
+		background: url(../img/button_hover.png) no-repeat;
+		text-transform: capitalize;
+		color: $tekst;
+		text-shadow: 2px 1px 1px #fff;
+		font-size: 30px;
+		font-weight: 200;
+		text-align: center;
+		padding-top: 15px;
+		@include select;
+		
+		&:hover{
+			background: url(../img/button_active.png) no-repeat;
 		}
+	}
+	
+	.arrow-left{
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-top: 50px solid transparent;
+		border-bottom: 50px solid transparent;
+		border-right: 60px solid rgba(255,255,255,.7);
+		left: -60px;
+	}
+	
+	#salesArrow{
+		top: 23px;
+	}
+	
+	#supportArrow{
+		top: 60px;
+	}
+	
+	#contactArrow{
+		top: 100px;
+	}
 	
 	.pContent{
 		background-color: rgba(255,255,255,.7);
@@ -177,7 +194,7 @@ nav{
 		font-family: georgia;
 		color: $tekst;
 		position: absolute;
-		box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+		box-shadow: 1px 2px 5px rgba(0,0,0,.1);
 		width: 250px;
 		
 		p{
@@ -190,15 +207,15 @@ nav{
 	}
 	
 	#salesContent{
-		margin: -150px 0 0 300px;
+		margin: -150px 0 0 320px;
 	}
 	
 	#supportContent{
-		margin: -190px 0 0 300px;
+		margin: -190px 0 0 320px;
 	}
 	
 	#contactContent{
-		margin: -220px 0 0 300px;
+		margin: -230px 0 0 320px;
 		padding: 20px 20px;
 		p{
 			margin: 0;
