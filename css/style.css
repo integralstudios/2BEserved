@@ -87,7 +87,8 @@ body {
   background: url(../img/pattern.png), -o-linear-gradient(top, #fcfcfc, #dddddd); }
 
 header #logo {
-  margin: 100px 0 0 70px; }
+  margin: 100px 0 0 70px;
+  width: 182px; }
 
 #imac {
   position: absolute;
@@ -101,7 +102,7 @@ nav {
   nav p.title {
     width: 250px;
     height: 72px;
-    background: url(../img/button_hover.png) no-repeat;
+    background: url(../img/btn_hover.png) no-repeat;
     text-transform: capitalize;
     color: #989898;
     text-shadow: 2px 1px 1px #fff;
@@ -116,7 +117,7 @@ nav {
     -ms-user-select: none;
     user-select: none; }
     nav p.title:hover {
-      background: url(../img/button_active.png) no-repeat; }
+      background: url(../img/butn_active.png) no-repeat; }
   nav .arrow-left {
     position: absolute;
     width: 0;
