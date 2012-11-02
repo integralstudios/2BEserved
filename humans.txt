@@ -1,0 +1,19 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Integral Studios: @artlamb1, @peecken, @vdclouis & @officemaurice
+  Site: http://integralstudios.be
+  Twitter: @integralstudios
+  Location: Ghent, Belgium
+
+/* PICTURES */
+  Site: http://www.jefboesphotography.be/
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery
+
+/* LAST UPDATE */
+  2/11/2012

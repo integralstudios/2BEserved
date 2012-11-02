@@ -107,46 +107,47 @@ html{
 	min-height: 100%;
 }
 body {
-	min-height: 100%;
+	min-height: 100%;	
 	background:
-		url(../img/pattern.png),
-		-webkit-linear-gradient(top, #fcfcfc, #ddd);
+		-webkit-linear-gradient(top, #fdfdfd, #ddd);
 		
 	background:
-		url(../img/pattern.png),
 		-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fcfcfc), to(#ddd));
 		
 	background:
-		url(../img/pattern.png),
 		-moz-linear-gradient(top, #fcfcfc, #ddd);
 		
 	background:
-		url(../img/pattern.png),
 		-ms-linear-gradient(top, #fcfcfc, #ddd);
 		
 	background:
-		url(../img/pattern.png),
-		-o-linear-gradient(top, #fcfcfc, #ddd);
+			-o-linear-gradient(top, #fcfcfc, #ddd);
+}
+
+.container{
+	width: 1024px;
+	margin: 0 auto;
+	position: relative;
 }
 
 header{
 	#logo{
-		margin: 50px 0 0 90px;
+		margin: 50px 0 0 0;
 		width: 182px;
 	}
 }
 
 #imac{
 	position: absolute;
-	right: 7%;
-	top: 40px;
-	width: 500px;
+	right: 0;
+	top: 50px;
+	width: 385px;
 	pointer-events: none;
 }
 
 nav{
 	
-	margin: 28px 0 0 70px;
+	margin: 28px 0 0 0;
 		
 	p.title{
 		width: 182px;
@@ -156,12 +157,13 @@ nav{
 		text-transform: capitalize;
 		color: $tekst;
 		text-shadow: 0px 1px 0px #fff;
+		font-family: "Helvetica Neue";
 		font-size: 23px;
 		font-weight: 200;
 		text-align: center;
 		padding-top: 10px;
 		cursor: pointer;
-		margin: 20px;
+		margin: 20px 0;
 		@include select;
 		
 		&:hover{
@@ -173,37 +175,38 @@ nav{
 		position: absolute;
 		width: 0;
 		height: 0;
-		border-top: 50px solid transparent;
-		border-bottom: 50px solid transparent;
-		border-right: 60px solid rgba(255,255,255,.7);
-		left: -60px;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		border-right: 9px solid rgba(245,245,245,1);
+		left: -9px;
 	}
 	
 	#salesArrow{
-		top: 23px;
-	}
-	
-	#supportArrow{
 		top: 60px;
 	}
 	
+	#supportArrow{
+		top: 75px;
+	}
+	
 	#contactArrow{
-		top: 100px;
+		top: 120px;
 	}
 	
 	.pContent{
-		background-color: rgba(255,255,255,.7);
+		/* background-color: rgba(255,255,255,.7); */
+		background-image: -webkit-gradient(  linear, left top, left bottom, from(rgba(255,255,255,.9)), to(rgba(221,221,221,.2)));
 		border-radius: 10px;
-		padding: 1px 20px;
+		padding: 1px 26px;
 		font-family: georgia;
 		color: $tekst;
 		position: absolute;
-		box-shadow: 1px 2px 5px rgba(0,0,0,.1);
+		box-shadow: 0px 1px 2px rgba(0,0,0,.1);
 		width: 250px;
 		
 		p{
 			line-height: 1.8em;
-			font-size: 20px;
+			font-size: 18px;
 			font-style: italic;
 			font-weight: 200;
 			text-shadow: 1px 1px 1px #fff;
@@ -211,15 +214,15 @@ nav{
 	}
 	
 	#salesContent{
-		margin: -150px 0 0 320px;
+		margin: -125px 0 0 250px;
 	}
 	
 	#supportContent{
-		margin: -190px 0 0 320px;
+		margin: -140px 0 0 250px;
 	}
 	
 	#contactContent{
-		margin: -230px 0 0 320px;
+		margin: -185px 0 0 250px;
 		padding: 20px 20px;
 		p{
 			margin: 0;
@@ -239,7 +242,6 @@ footer{
 		background-color: $tekst;
 		height: 1px;
 		width: 200px;
-		margin-left: 90px;
 		box-shadow: 0px 1px 0px #fff;
 	}
 	
@@ -249,7 +251,7 @@ footer{
 		width: 200px;
 		font-size: 11px;
 		font-weight: lighter;
-		margin-top: 150px;
+		margin-top: 200px;
 		padding-top: 10px;
 		text-shadow: 0px 1px 0px #fff;
 	}
