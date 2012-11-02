@@ -132,6 +132,7 @@ body {
 header{
 	#logo{
 		margin: 100px 0 0 70px;
+		background-size: 50%;
 	}
 }
 
@@ -150,7 +151,7 @@ nav{
 	p.title{
 		width: 250px;
 		height: 72px;
-		background: url(../img/button_hover.png) no-repeat;
+		background: url(../img/btn_hover.png) no-repeat;
 		text-transform: capitalize;
 		color: $tekst;
 		text-shadow: 2px 1px 1px #fff;
@@ -161,7 +162,7 @@ nav{
 		@include select;
 		
 		&:hover{
-			background: url(../img/button_active.png) no-repeat;
+			background: url(../img/butn_active.png) no-repeat;
 		}
 	}
 	
