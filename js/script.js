@@ -18,5 +18,9 @@ $(function() {
 		$('#salesContent').hide();
 		$('#contactContent').toggle();
 	});
+	
+	$('.container').click(function (){
+		$('.pContent').hide();
+	})
 });
 

@@ -195,7 +195,7 @@ nav{
 	
 	.pContent{
 		/* background-color: rgba(255,255,255,.7); */
-		background-image: -webkit-gradient(  linear, left top, left bottom, from(rgba(255,255,255,.9)), to(rgba(221,221,221,.2)));
+		background-image: -webkit-gradient(  linear, left top, left bottom, from(rgba(255,255,255,.9)), to(rgba(221,221,221,.9)));
 		border-radius: 10px;
 		padding: 1px 26px;
 		font-family: georgia;
@@ -269,6 +269,13 @@ footer{
 		width: 125px;
 	}
 }
+	
+	#imac{
+		width: 280px;
+		top: 30px;
+		
+	}
+	
 	nav{
 	margin: 14px 0 0 0;
 		p.title{
@@ -278,14 +285,16 @@ footer{
 			font-size: 12px;
 			margin: 5px 0;
 		}
-	}
 	
-	#imac{
-		width: 280px;
-		top: 30px;
+	
+	
+	.pContent{
+		width: 150px;
 		
+		p{
+			font-size: 12px;
+		}
 	}
-	
 	footer{
 		margin: 120px 0 0 0;
 		p{
@@ -294,6 +303,8 @@ footer{
 		}
 	}
 	
+}
+
 }
 
 @media screen and (max-width: 640px){
