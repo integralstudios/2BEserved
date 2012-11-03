@@ -196,14 +196,14 @@ nav{
 	}
 	
 	.pContent{
-		/* background-color: rgba(255,255,255,.7); */
-		background-image: -webkit-gradient(  linear, left top, left bottom, from(rgba(255,255,255,.9)), to(rgba(221,221,221,.9)));
+		
+		background-image: -webkit-gradient(  linear, left top, left bottom, from(rgba(255,255,255,.8)), to(rgba(221,221,221,.9)));
 		border-radius: 10px;
 		padding: 1px 26px;
 		font-family: georgia;
 		color: $tekst;
 		position: absolute;
-		box-shadow: 0px 1px 2px rgba(0,0,0,.1);
+		box-shadow: 0px 1px 0px rgba(0,0,0,.1);
 		width: 250px;
 		
 		p{
@@ -260,15 +260,20 @@ footer{
 	}
 }
 
-@media screen and (min-width: 640px) and (max-width: 1024px){
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px)
+and (orientation: landscape){
+/* Styles*/
 	.container{
 		width: 640px;
 	}
 	
 	header{
 	#logo{
-		margin: 50px 0 0 0;
-		width: 125px;
+		margin: 30px 0 0 0;
+		width: 135px;
 	}
 }
 	
@@ -281,9 +286,9 @@ footer{
 	nav{
 	margin: 14px 0 0 0;
 		p.title{
-			width:125px;
-			height: 35px;
-			background-size: 125px;
+			width:135px;
+			height: 45px;
+			background-size: 135px;
 			font-size: 12px;
 			margin: 5px 0;
 		}
@@ -297,25 +302,150 @@ footer{
 			font-size: 12px;
 		}
 	}
+}	
+
 	footer{
-		margin: 120px 0 0 0;
+		margin: 90px 0 0 0;
+		
+		.border
+	
+	{
+		width: 140px;
+		}
+		
 		p{
-			font-size: 10px;
+			font-size: 8px;
 			text-shadow: 0px 1px 0px #fff;
 		}
 	}
 	
 }
 
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px)
+and (orientation: portrait){
+/* Styles*/
+
+	.container{
+		width: 640px;
+	}
+	
+	header{
+	#logo{
+		margin: 50px 0 0 0;
+		width: 180px;
+	}
+}
+	
+	#imac{
+		width: 337px;
+		top: 50px;
+		
+	}
+	
+	nav{
+	margin: 14px 0 0 0;
+		p.title{
+			width:180px;
+			height: 65px;
+			background-size: 180px;
+			font-size: 16px;
+			margin: 5px 0;
+			padding-top: 13px;
+		}
+	
+	
+	
+	.pContent{
+		width: 150px;
+		
+		p{
+			font-size: 12px;
+		}
+	}
+}	
+
+	footer{
+		margin: 90px 0 0 0;
+		
+		.border
+	
+	{
+		width: 140px;
+		}
+		
+		p{
+			font-size: 8px;
+			text-shadow: 0px 1px 0px #fff;
+		}
+	}
+	
 }
 
-@media screen and (max-width: 640px){
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
 	.container{
 		width: 320px;
 	}
 	
 	#imac{
 	display: none;
+		
+	}
+	
+	
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (min-width : 320px) {
+/* Styles */
+	.container{
+		width: 320px;
+	}
+	
+	header{
+	#logo{
+		margin: 20px 0 0 59px;
+		width: 200px;
+	}
+}
+
+	
+	#imac{
+	display: none;
+		
+	}
+	
+	nav{
+	margin: 12px 0 0 59px;
+		p.title{
+			width:200px;
+			height: 50px;
+			background-size: 200px;
+			font-size: 22px;
+			margin: 6px 0;
+			padding-top: 13px;
+		}
+	
+	
+	
+	.pContent{
+		width: 150px;
+		
+		p{
+			font-size: 12px;
+		}
+	}
+}	
+	
+	footer{
+		display: none;
 		
 	}
 	
