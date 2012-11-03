@@ -387,7 +387,9 @@ and (orientation: portrait){
 
 /* Smartphones (landscape) ----------- */
 @media only screen 
-and (min-width : 321px) {
+and (min-device-width: 321px)
+and (max-device-width: 480px)
+{
 /* Styles */
 	.container{
 		width: 320px;
@@ -403,7 +405,8 @@ and (min-width : 321px) {
 
 /* Smartphones (portrait) ----------- */
 @media only screen 
-and (min-width : 320px) {
+and (max-device-width: 320px)
+{
 /* Styles */
 	.container{
 		width: 320px;
